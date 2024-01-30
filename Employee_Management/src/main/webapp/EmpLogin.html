@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		body {
+			height: 100%;
+			overflow-y: hidden;
+			background-image: url(ss.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+		.two {
+			display: flex;
+
+			justify-content: space-evenly;
+			float: right
+		}
+
+		.one {
+			padding: 5px;
+			margin-left: 10px;
+			text-align: center;
+			font-size: 30px;
+
+		}
+
+		span {
+			color: white;
+			font-size: 25px;
+			line-height: 20px;
+
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 10px;
+
+		}
+
+		button {
+			background-color: gray;
+			font-size: 15px;
+			border-radius: 10px;
+		}
+
+		button:hover {
+			font-size: 25px;
+		}
+
+		.four {
+			width: 20%;
+			text-align: center;
+			position: relative;
+			margin-top: 200px;
+			margin-left: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="two">
+		<div class="one">
+			<button><a href="index.jsp"><span>Home</span></a></button>
+		</div>
+		<div class="one">
+			<button> <a href="EmpLogin.html"><span>Emp Sign in</span></a> </button>
+		</div>
+		<div class="one">
+			<button> <a href="ManagerLogin.html"><span>Manager Login</span></a></button>
+		</div>
+		<div class="one">
+			<button> <a href="Aboutus.html"><span>About us</span></a></button>
+		</div>
+	</div>
+
+	<br><br>
+	<center>
+		<fieldset class="four">
+			<h2 style="color:brown;">Employee Sign-in</h2>
+			<form action="elogin" method="Get">
+				Empname:<br>
+				<input type="text" name="username" style="width:60%;"><br>
+				EmpId:<br>
+				<input type="text" name="id" style="width:60%;"><br><br>
+				<input type="submit" style="color:white;background-color:#1e90ff;font-size:20px;"value="Login">
+				<input type="reset" style="color:white;background-color:black;margin-left:10px;font-size:20px;" value="Cancel">
+			</form>
+		</fieldset>
+	</center>
+
+</body>
+</html>

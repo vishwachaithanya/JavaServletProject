@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		.two {
+			display: flex;
+
+			justify-content: space-evenly;
+			float: right
+		}
+
+		.one {
+			padding: 5px;
+			margin-left: 10px;
+			text-align: center;
+			font-size: 30px;
+
+		}
+
+		span {
+			color: white;
+			font-size: 25px;
+			line-height: 20px;
+
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 10px;
+
+		}
+
+		button {
+			background-color: gray;
+			font-size: 15px;
+			border-radius: 10px;
+		}
+
+		button:hover {
+			font-size: 25px;
+
+		}
+
+		.four {
+			width: 20%;
+			text-align: center;
+
+			position: relative;
+			margin-top: 200px;
+			margin-left: 50px;
+		}
+
+		body {
+			background-image: url(ss.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<div class="two">
+		<div class="one">
+			<button><a href="index.jsp"><span>Home</span></a></button>
+		</div>
+		<div class="one">
+			<button><a href="EmpLogin.html"><span>EmpSignIn</span></a></button>
+		</div>
+		<div class="one">
+			<button> <a href="ManagerLogin.html"><span>ManagerLogin</span></a></button>
+		</div>
+		<div class="one">
+			<button><a href="Aboutus.html"><span>AboutUs</span></a></button>
+		</div>
+	</div>
+
+	<br><br>
+	<center>
+		<fieldset class="four">
+
+			<h2 style="color:brown">Manager Login</h2>
+			<form action="mlogin" method="Get">
+
+				ManagerName:<br>
+				<input type="text" name="username"><br>
+
+				ManagerId:<br>
+				<input type="text" name="id"><br><br>
+
+				<input type="submit" style=color:white;background-color:#1e90ff;font-size:18px value="Managerlogin">
+				<input type="reset" style=color:white;background-color:black;margin-left:10px;font-size:18px
+					value="Cancel">
+
+			</form>
+		</fieldset>
+	</center>
+
+</body>
+
+</html>
